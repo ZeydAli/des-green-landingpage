@@ -1,0 +1,2233 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;400;500;600;700;800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+p {
+    font-family: 'Barlow', sans-serif;
+}
+
+:root {
+    --primary-color: #70A92C;
+    --secondary-color: #548519;
+    --secondary2-color: #3f6017;
+    --secondary3-color: #33ff00;
+    --accent-color: #35b200;
+    --dark: #312402;
+    --bg-color: #EFF5F7;
+    --bg-color2: #e7ebff9c;
+}
+
+body {
+    background: var(--bg-color);
+}
+
+.btn {
+    font-size: 18px;
+    background: var(--accent-color);
+    padding: 15px;
+    text-align: center;
+    text-decoration: inherit;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #fff;
+    color: var(--secondary-color);
+    box-shadow: 0 0 10px rgba(64, 64, 64, 0.748);
+}
+
+.rocket-btn {
+    background: #fff;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    border: 5px solid var(--accent-color);
+    box-shadow: 0 0 10px rgba(64, 64, 64, 0.748);
+    position: fixed;
+    z-index: 1;
+    bottom: 70px;
+    right: 25px;
+}
+
+.rocket-btn:hover {
+    background: var(--accent-color);
+    border: 5px solid #fff;
+    box-shadow: 0 0 10px rgba(64, 64, 64, 0.748);
+}
+
+/* -------------------------NAVBAR--------------------------- */
+
+nav {
+    position: fixed;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(135deg, rgba(30, 29, 29, 0.713), rgba(49, 55, 47, 0.429));
+    border-bottom: 5px solid var(--secondary3-color);
+    backdrop-filter: blur(10px);
+    height: 80px;
+    width: 100%;
+}
+
+nav img {
+    height: 76px;
+    padding: 14px;
+}
+
+nav ul {
+    float: right;
+    line-height: 80px;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 18px;
+    padding: 10px 16px;
+    border-radius: 3px;
+}
+
+nav a.active, nav a:hover {
+    background: var(--accent-color);
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.25);
+    transition: .5s;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+/* -------------------------CONTAINER 1--------------------------- */
+
+.container-1 {
+    padding-top: 75px;
+}
+
+.slider-wrapper {
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.slider {
+    display: flex;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
+.slider section {
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;   
+}
+
+/* -------------------------CAROUSEL 1--------------------------- */
+
+.carousel-1 {
+    padding: 75px 30px;
+    background-image: url(assets/carousel1.png);
+    background-size: cover;
+    background-position: center;
+    height: 800px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-1-container-1 {
+    margin-right: 550px;
+    margin-top: -250px;
+}
+
+.carousel-1 h2 {
+    font-size: 52px;
+}
+
+.carousel-1 h3 {
+    font-size: 40px;
+    font-weight: 530;
+}
+
+.carousel-1 p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 25px;
+    word-spacing: 10px;
+}
+
+.carousel-1 h5 {
+    color: var(--secondary-color);
+    margin-bottom: 40px;
+}
+
+/* -------------------------CAROUSEL 2--------------------------- */
+
+.carousel-2 {
+    padding: 75px 30px;
+    background-image: url(assets/carousel2.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 800px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-2-container-1 {
+    margin-right: 600px;
+    margin-top: -250px;
+}
+
+.carousel-2 h2 {
+    font-size: 52px;
+}
+
+.carousel-2 p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 25px;
+    word-spacing: 10px;
+}
+
+.carousel-2 h5 {
+    color: var(--secondary-color);
+    margin-bottom: 40px;
+}
+
+.carousel-2-logo {
+    height: 436px;
+    width: 657px;
+}
+
+/* -------------------------CAROUSEL 3--------------------------- */
+
+.carousel-3 {
+    padding: 75px 30px;
+    background-image: url(assets/carousel3.png);
+    background-size: cover;
+    background-position: center;
+    height: 800px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-3-container-1 {
+    margin-top: -300px;
+    margin-right: 500px;
+}
+
+.carousel-3 h2 {
+    font-size: 52px;
+}
+
+.carousel-3 p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 25px;
+    word-spacing: 10px;
+}
+
+.carousel-3 h5 {
+    color: var(--secondary-color);
+    margin-bottom: 40px;
+}
+
+/* -------------------------CAROUSEL 4--------------------------- */
+
+.carousel-4 {
+    padding: 75px 30px;
+    background-image: url(assets/carousel4.png);
+    background-size: cover;
+    background-position: center;
+    height: 800px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-4-container-1 {
+    margin-top: -150px;
+    margin-right: 450px;
+}
+
+.carousel-4 h2 {
+    font-size: 52px;
+}
+
+.carousel-4 p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 25px;
+    word-spacing: 10px;
+}
+
+.carousel-4 h5 {
+    color: var(--secondary-color);
+    margin-bottom: 40px;
+}
+
+/* -------------------------CAROUSEL 5--------------------------- */
+
+.carousel-5 {
+    padding: 75px 30px;
+    background-image: url(assets/carousel5.png);
+    background-size: cover;
+    background-position: center;
+    height: 800px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-5-container-1 {
+    margin-top: -150px;
+    margin-right: 500px;
+}
+
+.carousel-5 h2 {
+    font-size: 52px;
+}
+
+.carousel-5 p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 25px;
+    word-spacing: 10px;
+}
+
+.carousel-5 h5 {
+    color: var(--secondary-color);
+    margin-bottom: 40px;
+}
+
+/* -------------------------CAROUSEL 6--------------------------- */
+
+.carousel-6 {
+    padding: 75px 30px;
+    background-image: url(assets/carousel6.png);
+    background-size: cover;
+    background-position: center;
+    height: 800px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-6-container-1 {
+    margin-top: -150px;
+    margin-right: 500px;
+}
+
+.carousel-6 h2 {
+    font-size: 52px;
+}
+
+.carousel-6 p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 25px;
+    word-spacing: 10px;
+}
+
+.carousel-6 h5 {
+    color: var(--secondary-color);
+    margin-bottom: 40px;
+}
+
+.slider-nav {
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 75px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.slider-nav a {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: var(--accent-color);
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+}
+
+.slider-nav a:hover {
+    opacity: 10;
+}
+
+/* -------------------------CONTAINER 2--------------------------- */
+
+.container-2 {
+    background: rgba(0, 0, 0, 0.8);
+    border-top: 5px solid var(--secondary3-color);
+    backdrop-filter: blur(20px);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.container-2-1 {
+    width: 500px;
+    padding: 20px;
+    color: #fff;
+    margin-left: 50px;
+}
+
+.container-2-1 h2 {
+    font-size: 45px;
+}
+
+.container-2-1 p {
+    margin-top: 10px;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.white-card {
+    background: #ffffffd5;
+    margin: 20px 10px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
+}
+
+.white-card h3 {
+    color: var(--accent-color);
+}
+
+.white-card p {
+    margin-top: 5px;
+}
+
+.container-2-3 {
+    margin-right: 50px;
+}
+
+/* -------------------------CONTAINER 3--------------------------- */
+
+.container-3 {
+    background: var(--bg-color2);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+}
+
+.container-3 h2 {
+    color: var(--accent-color);
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.container-3-1 {
+    max-height: 140px;
+    width: 855px;
+    display: flex;
+    overflow: auto;
+    padding-bottom: 5px;
+}
+
+.container-3-1::-webkit-scrollbar {
+    width: 0px;
+    height: 8px;
+}
+
+.container-3-1::-webkit-scrollbar-track {
+    background: #35b20060;
+    border-radius: 30px;
+}
+
+.container-3-1::-webkit-scrollbar-thumb {
+    background: rgba(48, 52, 47, 0.722);
+    border-radius: 30px;
+}
+
+.container-3-1 img {
+    max-width: 300px;
+    line-height: 110px;
+    padding: 15px;
+    text-align: center;
+    border: 1px solid rgb(190, 187, 187);
+    border-radius: 4px;
+    margin-right: 2px;
+    background: rgba(79, 97, 73, 0.423);
+}
+
+/* -------------------------CONTAINER 4--------------------------- */
+
+.container-4 {
+    background: var(--bg-color2);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+}
+
+.container-4 h2 {
+    color: var(--dark);
+    margin: 30px;
+}
+
+.container-4-1 {
+    display: flex;
+}
+
+.white-card-1 {
+    text-align: center;
+    background: #fff;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.white-card-1 h3 {
+    margin: 10px;
+}
+
+.white-card-1 p {
+    font-size: small;
+}
+
+.white-card-1:nth-child(1) {
+    background: var(--accent-color);
+    border: 2px solid rgba(0, 0, 0, 0.8);
+}
+
+.white-card-1:nth-child(2) {
+    background: rgba(0, 0, 0, 0.8);
+    color: var(--bg-color);
+    border: 2px solid var(--secondary3-color);
+}
+
+.white-card-1:nth-child(3) {
+    background: var(--accent-color);
+    border: 2px solid rgba(0, 0, 0, 0.8);
+}
+
+/* -------------------------CONTAINER 5--------------------------- */
+
+.container-5 {
+    background-image: url(assets/container_5.png);
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-5-1 {
+    display: flex;
+    height: 400px;
+    width: 400px;
+    margin-right: 100px;
+}
+
+.container-5-1 div:nth-child(1){
+    position: relative;
+    top: 110px;
+    left: 65px;
+}
+
+.container-5-1 div:nth-child(2){
+    position: relative;
+    top: 34px;
+    left: 87px;
+}
+
+.container-5-1 div:nth-child(3){
+    position: relative;
+    top: 196px;
+    left: -33px;
+}
+
+.green-circle {
+    background: var(--accent-color);
+    color: #fff;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    border: 5px solid rgba(255, 255, 255, 0.678);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.678);
+}
+
+.green-circle h2 {
+    font-size: medium;
+}
+
+.container-5-2 {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 20px;
+    color: #fff;
+    text-align: end;
+    border: 1px solid rgba(0, 0, 0, 0.137);
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.25);
+}
+
+.container-5-2 h2 {
+    margin-bottom: 10px;
+}
+
+.container-5-2 p {
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+/* -------------------------CONTAINER 6--------------------------- */
+
+.container-6 {
+    background: var(--bg-color2);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* -------------------------CONTAINER 6-1--------------------------- */
+
+.container-6-1 {
+    display: flex;
+    column-gap: 60px;
+}
+
+.container-6-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    color: #fff;
+    border: 3px solid var(--secondary3-color);
+    border-radius: 10px;
+}
+
+.container-6-1-1 {
+    padding: 100px;
+}
+
+.container-6-1-1 h2 {
+    color: var(--accent-color);
+    margin-bottom: 20px;
+}
+
+.container-6-1-1 p {
+    margin-bottom: 20px;
+}
+
+.container-6-1 img {
+    height: 400px;
+    padding: 30px;
+}
+
+/* -------------------------CONTAINER 6-2--------------------------- */
+
+.container-6-2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.container-6-2 h2 {
+    color: var(--accent-color);
+    margin-bottom: 20px;
+}
+
+/* -------------------------CONTAINER 6-3--------------------------- */
+
+.container-6-3 {
+    display: flex;
+    text-align: center;
+    margin-bottom: 40px;
+    column-gap: 100px;
+}
+
+.container-6-3 h2 {
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.container-6-3 i {
+    color: var(--accent-color);
+    padding: 20px;
+}
+
+
+/* -------------------------CONTAINER 6-4--------------------------- */
+
+.container-6-4 {
+    display: flex;
+    text-align: center;
+    margin-bottom: 40px;
+    column-gap: 100px;
+}
+
+.container-6-4 h2 {
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.container-6-4 i {
+    color: var(--accent-color);
+    padding: 20px;
+}
+
+/* -------------------------CONTAINER 7--------------------------- */
+
+.container-7 {
+    background: var(--bg-color2);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-7 .line-2 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.container-7 h2 {
+    color: var(--accent-color);
+    margin-right: 400px;
+    margin-bottom: 50px;
+}
+
+.white-card-2 {
+    background: #fff;
+    padding: 30px 30px 7px 15px;
+    width: 900px;
+    border: 2px solid var(--accent-color);
+    border-radius: 10px;
+    text-align: end;
+}
+
+.white-card-2-text {
+    margin-right: 300px;
+}
+
+.white-card-2-text h4 {
+    color: var(--accent-color);
+}
+
+.white-card-2-text p {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: medium;
+}
+
+.slider-nav2 {
+    display: flex;
+    column-gap: 3px;
+}
+
+.slider-nav2 a {
+    width:6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #D6D6D6;
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+}
+
+.slider-nav2 a:hover {
+    background-color: #505050;
+}
+
+.container-7 .man-1 {
+    position: relative;
+    top: -305px;
+    left: 248px;
+    height: 313px;
+}
+
+.container-7 .line-2-1 {
+    margin-top: -245px;
+}
+
+/* -------------------------CONTAINER 8--------------------------- */
+
+.container-8 {
+    background: var(--bg-color2);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+.container-8 h2 {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.btn2 {
+    font-size: 18px;
+    background: #fff;
+    padding: 15px;
+    text-align: center;
+    text-decoration: inherit;
+    color: var(--secondary-color);
+    box-shadow: 0 0 10px rgba(64, 64, 64, 0.748);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn2:hover {
+    background: var(--accent-color);
+    color: #fff;
+    box-shadow: none;
+}
+
+/* -------------------------FOOTER--------------------------- */
+
+.footer-container {
+    background: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-top: 5px solid var(--secondary3-color);
+    padding: 30px 40px;
+    color: #fff;
+}
+
+.footer-container-1 img {
+    width: 120px;
+}
+
+.footer-container-1 h6 {
+    font-size: 15px;
+    font-weight: lighter;
+    margin-top: 10px;
+}
+
+.footer-container-2 h3 {
+    margin-bottom: 15px;
+}
+
+.footer-container-2 p {
+    font-weight: lighter;
+}
+
+.footer-container-3 h3 {
+    margin-bottom: 15px;
+}
+
+.footer-container-3 p {
+    font-weight: lighter;
+    margin-bottom: 10px;
+}
+
+/* -------------------------RESPONSIVE--------------------------- */
+
+@media (max-width: 1045px) {
+
+    .rocket-btn {
+        width: 55px;
+        height: 55px;
+        border: 4px solid var(--primary-color);
+        box-shadow: 0 0 8px rgba(64, 64, 64, 0.748);
+    }
+
+    .rocket-btn img {
+        height: 35px;
+        width: 35px;
+    }
+
+    /* ------------------NAVBAR--------------------- */
+
+    nav ul li a {
+        font-size: 16px;
+    }
+
+    /* ----------------CONTAINER 1--------------------- */
+
+    /* ----------------CAROUSEL 1--------------------- */
+
+    .carousel-1 {
+        padding: 75px 30px;
+        height: 600px;
+        width: 100%;
+    }
+
+    .carousel-1-container-1 {
+        margin-right: 250px;
+        margin-top: -200px;
+    }
+
+    .carousel-1 h2 {
+        font-size: 45px;
+    }
+
+    .carousel-1 h3 {
+        font-size: 34px;
+        font-weight: 530;
+    }
+
+    .carousel-1 p {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 18px;
+        word-spacing: 10px;
+    }
+
+    .carousel-1 h5 {
+        margin-bottom: 40px;
+    }
+
+     /* ----------------CAROUSEL 2--------------------- */
+
+     .carousel-2 {
+        padding: 75px 30px;
+        height: 600px;
+        width: 100%;
+    }
+
+    .carousel-2-container-1 {
+        margin-right: 250px;
+        margin-top: -200px;
+    }
+
+    .carousel-2 h2 {
+        font-size: 45px;
+    }
+
+    .carousel-2 h3 {
+        font-size: 34px;
+        font-weight: 530;
+    }
+
+    .carousel-2 p {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 18px;
+        word-spacing: 10px;
+    }
+
+    .carousel-2 h5 {
+        margin-bottom: 40px;
+    }
+
+    /* ----------------CAROUSEL 3--------------------- */
+
+    .carousel-3 {
+        padding: 75px 30px;
+        height: 600px;
+        width: 100%;
+    }
+
+    .carousel-3-container-1 {
+        margin-right: 250px;
+        margin-top: -200px;
+    }
+
+    .carousel-3 h2 {
+        font-size: 45px;
+    }
+
+    .carousel-3 h3 {
+        font-size: 34px;
+        font-weight: 530;
+    }
+
+    .carousel-3 p {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 18px;
+        word-spacing: 10px;
+    }
+
+    .carousel-3 h5 {
+        margin-bottom: 40px;
+    }
+
+    /* ----------------CAROUSEL 4--------------------- */
+
+    .carousel-4 {
+        padding: 75px 30px;
+        height: 600px;
+        width: 100%;
+    }
+
+    .carousel-4-container-1 {
+        margin-right: 250px;
+        margin-top: -200px;
+    }
+
+    .carousel-4 h2 {
+        font-size: 45px;
+    }
+
+    .carousel-4 h3 {
+        font-size: 34px;
+        font-weight: 530;
+    }
+
+    .carousel-4 p {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 18px;
+        word-spacing: 10px;
+    }
+
+    .carousel-4 h5 {
+        margin-bottom: 40px;
+    }
+
+    /* ----------------CAROUSEL 5--------------------- */
+
+    .carousel-5 {
+        padding: 75px 30px;
+        height: 600px;
+        width: 100%;
+    }
+
+    .carousel-5-container-1 {
+        margin-right: 250px;
+        margin-top: -200px;
+    }
+
+    .carousel-5 h2 {
+        font-size: 45px;
+    }
+
+    .carousel-5 h3 {
+        font-size: 34px;
+        font-weight: 530;
+    }
+
+    .carousel-5 p {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 18px;
+        word-spacing: 10px;
+    }
+
+    .carousel-5 h5 {
+        margin-bottom: 40px;
+    }
+
+    /* ----------------CAROUSEL 6--------------------- */
+
+    .carousel-6 {
+        padding: 75px 30px;
+        height: 600px;
+        width: 100%;
+    }
+
+    .carousel-6-container-1 {
+        margin-right: 250px;
+        margin-top: -200px;
+    }
+
+    .carousel-6 h2 {
+        font-size: 45px;
+    }
+
+    .carousel-6 h3 {
+        font-size: 34px;
+        font-weight: 530;
+    }
+
+    .carousel-6 p {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 18px;
+        word-spacing: 10px;
+    }
+
+    .carousel-6 h5 {
+        margin-bottom: 40px;
+    }
+
+    /* ----------------CONTAINER 2--------------------- */
+
+    .container-2 {
+        padding: 20px 5px;
+    }
+    
+    .container-2-1 {
+        width: 450px;
+        padding: 10px;
+        margin-left: 30px;
+    }
+    
+    .container-2-1 h2 {
+        font-size: 38px;
+    }
+    
+    .container-2-1 p {
+        font-size: 17px;
+    }
+
+    .white-card p {
+        font-size: 14px;
+    }
+    
+    .container-2-3 {
+        margin-right: 30px;
+    }
+
+    /* ----------------CONTAINER 3--------------------- */
+    
+    .container-3-1 {
+        max-height: 140px;
+        width: 795px;
+        display: flex;
+        overflow: auto;
+        padding-bottom: 5px;
+    }
+
+    /* ----------------CONTAINER 5--------------------- */
+
+    .container-5 {
+        height: 350px;
+    }
+    
+    .container-5-1 {
+        height: 350px;
+        width: 350px;
+        margin-right: 50px;
+    }
+    
+    .container-5-1 div:nth-child(1){
+        top: 110px;
+        left: 45px;
+    }
+    
+    .container-5-1 div:nth-child(2){
+        top: 34px;
+        left: 67px;
+    }
+    
+    .container-5-1 div:nth-child(3){
+        top: 196px;
+        left: -53px;
+    }
+    
+    .green-circle {
+        padding: 15px;
+        width: 115px;
+        height: 115px;
+    }
+    
+    .container-5-2 p {
+        font-size: 17px;
+    }
+
+    /* ----------------CONTAINER 6--------------------- */
+    
+    .container-6-1 {
+        column-gap: 30px;
+    }
+
+    .container-6-1-1 {
+        padding: 70px;
+    }
+
+    .container-6-1 img {
+        height: 350px;
+        padding: 30px;
+    }
+
+    /* ----------------CONTAINER 7--------------------- */
+    
+    .container-7 h2 {
+        margin-right: 130px;
+        margin-bottom: 40px;
+    }
+    
+    .white-card-2 {
+        padding: 20px 20px 7px 15px;
+        width: 700px;
+        border-radius: 10px;
+        text-align: end;
+    }
+    
+    .white-card-2-text {
+        margin-right: 200px;
+    }
+    
+    .white-card-2-text p {
+        font-size: 15px;
+    }
+
+}
+
+@media (max-width: 858px) {
+    .checkbtn {
+        display: block;
+    }
+
+    nav ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.87);
+        backdrop-filter: blur(20px);
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        z-index: 1000;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    a:hover,a.active {
+        background: none;
+        color: #fff;
+    }
+
+    #check:checked ~ ul {
+        left: 0;
+    }
+
+    /* ----------------CONTAINER 3--------------------- */
+
+    .container-3-1 {
+        max-height: 140px;
+        width: 725px;
+        display: flex;
+        overflow: auto;
+        padding-bottom: 5px;
+    }
+
+    /* ----------------CONTAINER 5--------------------- */
+
+    .container-5 {
+        height: 350px;
+    }
+    
+    .container-5-1 {
+        height: 350px;
+        width: 350px;
+        margin-right: 0;
+    }
+    
+    .container-5-1 div:nth-child(1){
+        top: 110px;
+        left: 45px;
+    }
+    
+    .container-5-1 div:nth-child(2){
+        top: 34px;
+        left: 67px;
+    }
+    
+    .container-5-1 div:nth-child(3){
+        top: 196px;
+        left: -53px;
+    }
+    
+    .green-circle {
+        padding: 15px;
+        width: 100px;
+        height: 100px;
+    }
+
+    .green-circle h2 {
+        font-size: small;
+    }
+
+    .container-5-2 h2 {
+        font-size: 20px;
+    }
+    
+    .container-5-2 p {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 738px) {
+
+    /* ----------------CONTAINER 3--------------------- */
+
+    .container-3-1 {
+        max-height: 140px;
+        width: 565px;
+        display: flex;
+        overflow: auto;
+        padding-bottom: 5px;
+    }
+
+    .container-6-1 {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        column-gap: 30px;
+    }
+    
+    .container-6-1-1 {
+        padding: 50px;
+    }
+    
+    .container-6-1-1 h2 {
+        color: var(--secondary-color);
+        margin-bottom: 20px;
+    }
+    
+    .container-6-1-1 p {
+        margin-bottom: 20px;
+    }
+    
+    .container-6-1 img {
+        height: 350px;
+        padding: 30px;
+    }
+
+    .container-7 {
+        width: 100%;
+    }
+    
+    .container-7 .line-2 {
+        margin-top: 10px;
+        margin-bottom: 40px;
+    }
+    
+    .container-7 h2 {
+        margin-right: 165px;
+        font-size: 25px;
+        width: 365px;
+        margin-bottom: 50px;
+    }
+    
+    .white-card-2 {
+        padding: 20px 20px 7px 15px;
+        width: 576px;
+        border-radius: 10px;
+        text-align: end;
+    }
+    
+    .white-card-2-text {
+        margin-right: 242px;
+    }
+    
+    .white-card-2-text p {
+        margin-top: 10px;
+        margin-bottom: 30px;
+        font-size: 20px;
+    }
+    
+    .container-7 .man-1 {
+        position: relative;
+        top: -303px;
+        left: 134px;
+        height: 307px;
+    }
+    
+    .container-7 .line-2-1 {
+        margin-top: -245px;
+    }
+}
+
+@media (max-width: 580px) {
+
+    .rocket-btn {
+        width: 55px;
+        height: 55px;
+        border: 4px solid var(--primary-color);
+        box-shadow: 0 0 8px rgba(64, 64, 64, 0.748);
+    }
+
+    .rocket-btn img {
+        height: 35px;
+        width: 35px;
+    }
+
+    /* ----------------CAROUSEL 1--------------------- */
+
+    .carousel-1 {
+        padding: 75px 50px;
+        height: 400px;
+        width: 100%;
+    }
+
+    .carousel-1-container-1 {
+        margin-right: 100px;
+        margin-top: -50px;
+    }
+
+    .carousel-1 h2 {
+        font-size: 30px;
+    }
+
+    .carousel-1 h3 {
+        font-size: 25px;
+    }
+
+    .carousel-1 p {
+        font-size: 15px;
+    }
+
+     /* ----------------CAROUSEL 2--------------------- */
+
+    .carousel-2 {
+        padding: 75px 80px;
+        height: 400px;
+        width: 100%;
+    }
+
+    .carousel-2-container-1 {
+        margin-right: 180px;
+        margin-top: 0;
+    }
+
+    .carousel-2 h2 {
+        font-size: 30px;
+    }
+
+    .carousel-2 p {
+        font-size: 15px;
+    }
+
+    /* ----------------CAROUSEL 3--------------------- */
+
+    .carousel-3 {
+        padding: 75px 30px;
+        height: 400px;
+        width: 100%;
+    }
+
+    .carousel-3-container-1 {
+        margin-right: 150px;
+        margin-top: -100px;
+    }
+
+    .carousel-3 h2 {
+        font-size: 30px;
+    }
+
+    .carousel-3 p {
+        font-size: 15px;
+        width: 220px;
+    }
+
+    /* ----------------CAROUSEL 4--------------------- */
+
+    .carousel-4 {
+        padding: 75px 30px;
+        height: 400px;
+        width: 100%;
+    }
+
+    .carousel-4-container-1 {
+        margin-right: 158px;
+        margin-top: -50px;
+    }
+
+    .carousel-4 h2 {
+        font-size: 30px;
+    }
+
+    .carousel-4 p {
+        font-size: 15px;
+    }
+
+    /* ----------------CAROUSEL 5--------------------- */
+
+    .carousel-5 {
+        padding: 75px 30px;
+        height: 400px;
+        width: 100%;
+    }
+
+    .carousel-5-container-1 {
+        margin-right: 70px;
+        margin-top: 0;
+    }
+
+    .carousel-5 h2 {
+        font-size: 30px;
+    }
+
+    .carousel-5 p {
+        font-size: 15px;
+        width: 170px;
+    }
+
+    /* ----------------CAROUSEL 6--------------------- */
+
+    .carousel-6 {
+        padding: 75px 30px;
+        height: 400px;
+        width: 100%;
+    }
+
+    .carousel-6-container-1 {
+        margin-right: 70px;
+        margin-top: -40px;
+    }
+
+    .carousel-6 h2 {
+        font-size: 30px;
+    }
+
+    .carousel-6 p {
+        font-size: 15px;
+        width: 220px;
+    }
+
+    .slider-nav {
+        margin-bottom: -70px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1;
+    }
+
+    /* ----------------CONTAINER 2--------------------- */
+
+    .container-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+    
+    .container-2-1 {
+        width: 350px;
+        padding: 20px;
+        color: #fff;
+        margin-left: 0;
+        text-align: center;
+    }
+    
+    .container-2-1 h2 {
+        font-size: 30px;
+    }
+    
+    .container-2-1 p {
+        margin-top: 10px;
+        font-size: 15px;
+        letter-spacing: 1px;
+    }
+
+    .container-2-2 {
+        display: flex;
+    }
+    
+    .white-card {
+        margin: 10px;
+        padding: 15px;
+    }
+    
+    .white-card p {
+        margin-top: 5px;
+    }
+    
+    .container-2-3 {
+        margin-right: 0;
+    }
+
+    /* ----------------CONTAINER 3--------------------- */
+
+    .container-3-1 {
+        max-height: 140px;
+        width: 400px;
+        display: flex;
+        overflow: auto;
+        padding-bottom: 5px;
+    }
+
+    /* ----------------CONTAINER 4--------------------- */
+
+    .container-4 {
+        padding: 10px 20px;
+    }
+    
+    .container-4 h2 {
+        margin: 30px;
+    }
+    
+    .container-4-1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* ----------------CONTAINER 5--------------------- */
+
+    .container-5 {
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .container-5-1 {
+        height: 350px;
+        width: 400px;
+        margin-right: 0;
+    }
+    
+    .container-5-1 div:nth-child(1){
+        top: 110px;
+        left: 65px;
+    }
+    
+    .container-5-1 div:nth-child(2){
+        top: 34px;
+        left: 87px;
+    }
+    
+    .container-5-1 div:nth-child(3){
+        top: 196px;
+        left: -33px;
+    }
+    
+    .green-circle {
+        width: 110px;
+        height: 110px;
+    }
+    
+    .container-5-2 {
+        padding: 10px;
+    }
+    
+    .container-5-2 p {
+        font-size: 15px;
+        letter-spacing: 1px;
+    }
+
+    /* ----------------CONTAINER 6--------------------- */
+    
+    .container-6-1 {
+        display: flex;
+        text-align: center;
+        column-gap: 20px;
+        flex-direction: column;
+    }
+    
+    .container-6-1-1 {
+        padding: 20px;
+    }
+    
+    .container-6-1 img {
+        height: 300px;
+        padding: 10px;
+        margin-bottom: 30px;
+    }
+
+    .container-6-2 {
+        width: 300px;
+    }
+
+    .container-6-3 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container-6-4 {
+        column-gap: 30px;
+        width: 350px;
+    }
+
+    /* ----------------CONTAINER 7--------------------- */
+    
+    .container-7 .line-2 {
+        margin-top: 10px;
+        width: 350px;
+        margin-bottom: 40px;
+    }
+    
+    .container-7 h2 {
+        margin-left: 50px;
+        width: 287px;
+        margin-bottom: 50px;
+    }
+    
+    .white-card-2 {
+        padding: 20px 5px 7px 5px;
+        width: 350px;
+        border-radius: 10px;
+        text-align: end;
+    }
+    
+    .white-card-2-text {
+        margin-right: 30px;
+    }
+    
+    .white-card-2-text p {
+        margin-top: 10px;
+        margin-bottom: 20px;
+        font-size: medium;
+    }
+    
+    .container-7 .man-1 {
+        position: relative;
+        top: -375px;
+        left: 118px;
+        height: 233px;
+    }
+    
+    .container-7 .line-2-1 {
+        width: 350px;
+        margin-top: -205px;
+    }
+
+    /* ----------------CONTAINER 8--------------------- */
+
+    .container-8 h2 {
+        text-align: center;
+        font-size: 18px;
+        margin-top: 50px;
+        margin-bottom: 40px;
+    }
+
+    /* ----------------FOOTER--------------------- */
+    
+    .footer-container-1 img {
+        width: 100px;
+    }
+    
+    .footer-container-1 h6 {
+        font-size: 13px;
+        font-weight: lighter;
+        margin-top: 10px;
+    }
+    
+    .footer-container-2 h3 {
+        font-size: 17px;
+        margin-bottom: 15px;
+    }
+    
+    .footer-container-2 p {
+        font-size: 13px;
+        font-weight: lighter;
+    }
+    
+    .footer-container-3 h3 {
+        font-size: 17px;
+        margin-bottom: 15px;
+    }
+    
+    .footer-container-3 p {
+        font-size: 13px;
+        font-weight: lighter;
+        margin-bottom: 10px;
+    }
+
+    .footer-link img {
+        height: 30px;
+        width: 30px;
+    }
+}
+
+@media (max-width: 416px) {
+
+    .btn {
+        font-size: 13px;
+        background: var(--primary-color);
+        padding: 13px;
+        text-align: center;
+        text-decoration: inherit;
+        color: #fff;
+        border-radius: 30px;
+        cursor: pointer;
+    }
+    
+    .btn:hover {
+        background: #fff;
+        box-shadow: 0 0 10px rgba(64, 64, 64, 0.748);
+    }
+
+    /* ----------------CAROUSEL 1--------------------- */
+
+    .carousel-1 {
+        padding: 75px 50px;
+        height: 300px;
+        width: 100%;
+    }
+
+    .carousel-1-container-1 {
+        margin-right: 120px;
+        margin-top: -10px;
+    }
+
+    .carousel-1 h2 {
+        font-size: 20px;
+    }
+
+    .carousel-1 h3 {
+        font-size: 18px;
+    }
+
+    .carousel-1 p {
+        font-size: 12px;
+    }
+
+    .carousel-1 h5 {
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+
+     /* ----------------CAROUSEL 2--------------------- */
+
+    .carousel-2 {
+        padding: 75px 80px;
+        height: 300px;
+        width: 100%;
+    }
+
+    .carousel-2-container-1 {
+        margin-right: 150px;
+        margin-top: 0;
+    }
+
+    .carousel-2 h2 {
+        font-size: 20px;
+    }
+
+    .carousel-2 p {
+        font-size: 12px;
+    }
+
+    .carousel-2 h5 {
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+
+    /* ----------------CAROUSEL 3--------------------- */
+
+    .carousel-3 {
+        padding: 75px 30px;
+        height: 300px;
+        width: 100%;
+    }
+
+    .carousel-3-container-1 {
+        margin-right: 150px;
+        margin-top: -100px;
+    }
+
+    .carousel-3 h2 {
+        font-size: 20px;
+    }
+
+    .carousel-3 p {
+        font-size: 12px;
+    }
+
+    .carousel-3 h5 {
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+
+    /* ----------------CAROUSEL 4--------------------- */
+
+    .carousel-4 {
+        padding: 75px 30px;
+        height: 300px;
+        width: 100%;
+    }
+
+    .carousel-4-container-1 {
+        margin-right: 158px;
+        margin-top: -50px;
+    }
+
+    .carousel-4 h2 {
+        font-size: 20px;
+    }
+
+    .carousel-4 p {
+        font-size: 12px;
+    }
+
+    .carousel-4 h5 {
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+
+    /* ----------------CAROUSEL 5--------------------- */
+
+    .carousel-5 {
+        padding: 75px 30px;
+        height: 300px;
+        width: 100%;
+    }
+
+    .carousel-5-container-1 {
+        margin-right: 120px;
+        margin-top: 0;
+    }
+
+    .carousel-5 h2 {
+        font-size: 20px;
+    }
+
+    .carousel-5 p {
+        font-size: 12px;
+    }
+
+    .carousel-5 h5 {
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+
+    /* ----------------CAROUSEL 6--------------------- */
+
+    .carousel-6 {
+        padding: 75px 30px;
+        height: 300px;
+        width: 100%;
+    }
+
+    .carousel-6-container-1 {
+        margin-right: 120px;
+        margin-top: -40px;
+    }
+
+    .carousel-6 h2 {
+        font-size: 20px;
+    }
+
+    .carousel-6 p {
+        font-size: 12px;
+    }
+
+    .carousel-6 h5 {
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+
+    .slider-nav {
+        margin-bottom: -70px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1;
+    }
+
+    /* ----------------CONTAINER 2--------------------- */
+
+    .container-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+    
+    .container-2-1 {
+        width: 300px;
+        padding: 20px;
+        color: #fff;
+        margin-left: 0;
+    }
+    
+    .container-2-1 h2 {
+        font-size: 20px;
+    }
+    
+    .container-2-1 p {
+        margin-top: 10px;
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+
+    .container-2-2 {
+        display: flex;
+    }
+    
+    .white-card {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    .white-card h3 {
+        font-size: 18px;
+    }
+    
+    .white-card p {
+        font-size: 12px;
+    }
+    
+    .container-2-3 {
+        margin-right: 0;
+    }
+
+    /* ----------------CONTAINER 3--------------------- */
+
+    .container-3-1 {
+        max-height: 140px;
+        width: 300px;
+        display: flex;
+        overflow: auto;
+        padding-bottom: 5px;
+    }
+
+    .container-3 h2 {
+        font-size: 20px;
+    }
+
+    /* ----------------CONTAINER 4--------------------- */
+
+    .container-4 {
+        padding: 10px 20px;
+    }
+    
+    .container-4 h2 {
+        font-size: 20px;
+    }
+    
+    .container-4-1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* ----------------CONTAINER 5--------------------- */
+
+    .container-5 {
+        height: 520px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .container-5-1 {
+        height: 280px;
+        width: 330px;
+        margin-right: 0;
+    }
+    
+    .container-5-1 div:nth-child(1){
+        top: 35px;
+        left: 65px;
+    }
+    
+    .container-5-1 div:nth-child(2){
+        top: -22px;
+        left: 87px;
+    }
+    
+    .container-5-1 div:nth-child(3){
+        top: 118px;
+        left: -33px;
+    }
+    
+    .green-circle {
+        width: 110px;
+        height: 110px;
+    }
+    
+    .container-5-2 {
+        padding: 10px;
+    }
+    
+    .container-5-2 p {
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+
+    /* ----------------CONTAINER 6--------------------- */
+    
+    .container-6 h2 {
+        font-size: 20px;
+    }
+
+    .container-6 p {
+        font-size: 15px;
+    }
+
+    .container-6-1 {
+        display: flex;
+        text-align: center;
+        column-gap: 20px;
+        flex-direction: column;
+    }
+
+    .container-6-card {
+        padding: 10px 0;
+    }
+    
+    .container-6-1-1 {
+        padding: 20px;
+    }
+    
+    .container-6-1 img {
+        height: 250px;
+        padding: 10px;
+        margin-bottom: 30px;
+    }
+
+    .container-6-2 {
+        width: 300px;
+    }
+
+    .container-6-3 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container-6-4 {
+        column-gap: 30px;
+        width: 350px;
+    }
+
+    /* ----------------CONTAINER 7--------------------- */
+    
+    .container-7 .line-2 {
+        margin-top: 10px;
+        width: 350px;
+        margin-bottom: 40px;
+    }
+    
+    .container-7 h2 {
+        margin-left: 50px;
+        font-size: 15px;
+        width: 250px;
+        margin-bottom: 50px;
+    }
+    
+    .white-card-2 {
+        padding: 20px 5px 7px 5px;
+        width: 350px;
+        border-radius: 10px;
+        text-align: end;
+    }
+    
+    .white-card-2-text {
+        margin-right: 30px;
+    }
+    
+    .white-card-2-text p {
+        margin-top: 10px;
+        margin-bottom: 20px;
+        font-size: medium;
+    }
+    
+    .container-7 .man-1 {
+        position: relative;
+        top: -340px;
+        left: 92px;
+        height: 190px;
+    }
+    
+    .container-7 .line-2-1 {
+        width: 350px;
+        margin-top: -165px;
+    }
+
+    /* ----------------CONTAINER 8--------------------- */
+
+    .container-8 h2 {
+        text-align: center;
+        font-size: 15px;
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+
+    .btn2 {
+        font-size: 13px;
+        padding: 13px;
+    }
+
+    /* ----------------FOOTER--------------------- */
+
+    .footer-container {
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 20px;
+        text-align: center;
+    }
+    
+    .footer-container-1 img {
+        width: 100px;
+    }
+    
+    .footer-container-1 h6 {
+        font-size: 13px;
+        font-weight: lighter;
+        margin-top: 10px;
+    }
+    
+    .footer-container-2 h3 {
+        font-size: 17px;
+        margin-bottom: 15px;
+    }
+    
+    .footer-container-2 p {
+        font-size: 13px;
+        font-weight: lighter;
+    }
+    
+    .footer-container-3 h3 {
+        font-size: 17px;
+        margin-bottom: 15px;
+    }
+    
+    .footer-container-3 p {
+        font-size: 13px;
+        font-weight: lighter;
+        margin-bottom: 10px;
+    }
+
+    .footer-link img {
+        height: 30px;
+        width: 30px;
+    }
+}
